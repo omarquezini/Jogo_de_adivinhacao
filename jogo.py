@@ -4,18 +4,6 @@ print("#############___MMMMMM___###############")
 print("$$        jogo de adivinhação         $$")
 print("$            O_MARQUEZINI              $")
 print("#############___MMMMMM___###############")
-print("                                        ")
-print("    @@@@             ______________[]___")
-print("  @@@@@@@@@@         [                 ]")
-print("      @@@@@@@@@      [                 ]")
-print("_                    [                 ]")
-print("  \                  [                 ]")
-print("   \                 [                 ]")
-print("    \____       _____[                 ]")
-print("         \     /     [                 ]")
-print("          \___/_____ [                 ]")
-print("                    \[                 ]")
-print("                     [                 ]")
 
 
 
