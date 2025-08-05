@@ -35,3 +35,31 @@ elif level ==3:
 else:
     print("### BUG ENCONTRADO!!! ### 1 tentativas ### ")
     totalTentativas = 1
+
+for rodada in range(1, totalTentativas + 1):
+    print("Tentativa {} de {}".format(rodada, totalTentativas))
+    chute_str = input("Digite um número entre 1 a 100: ")
+    chute = int(chute_str)
+
+  
+    if chute < 1 or chute > 100:
+        print("Número inválido. O número deve ser entre 1 e 100.")
+        continue  
+
+    acertou = chute == numeroSecreto
+    maior = chute > numeroSecreto
+    menor = chute < numeroSecreto
+
+    if acertou:
+        print(f"Você acertou e fez {pontos}!")
+        break  
+    else:
+        if maior:
+            print("Você errou! Seu chute foi maior que o número secreto.")
+        elif menor:
+            print("Você errou! Seu chute foi menor que o número secreto.")
+    
+    pontosPerdidos = abs(numeroSecreto - chute)
+    pontos -= pontosPerdidos  
+    
+print("Fim de jogo! O número era", numeroSecreto)
